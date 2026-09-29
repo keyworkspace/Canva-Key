@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Subject, StudentProfile, ExpenseItem, StudyLog } from '../../types/student';
 import { calculateSubjectGrade } from '../../utils/studentCalculations';
 import { Sparkles, Timer, Play, Pause, RotateCcw, AlertTriangle, Wallet, CreditCard, Plus, Trash2, Printer, CheckCircle2, ShieldAlert } from 'lucide-react';
+import defaultAvatar from '../../assets/images/student_avatar_profile_1790642966980.jpg';
 
 interface ToolsViewProps {
   subjects: Subject[];
@@ -543,7 +544,7 @@ export const ToolsView: React.FC<ToolsViewProps> = ({
 
             <div className="flex items-center gap-4">
               <img
-                src={profile.avatarUrl || '/src/assets/images/student_avatar_profile_1790642966980.jpg'}
+                src={profile.avatarUrl || defaultAvatar}
                 alt={profile.name}
                 referrerPolicy="no-referrer"
                 className="w-18 h-18 rounded-xl object-cover border-2 border-slate-600"

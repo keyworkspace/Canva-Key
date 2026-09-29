@@ -9,6 +9,7 @@ import {
   Institution,
   AcademicPeriod,
 } from '../types/student';
+import defaultAvatar from '../assets/images/student_avatar_profile_1790642966980.jpg';
 
 export const INITIAL_INSTITUTIONS: Institution[] = [
   {
@@ -103,7 +104,7 @@ export const INITIAL_PROFILE: StudentProfile = {
   semester: 'Año Escolar 2026',
   scale: '10',
   passingGrade: 6.0,
-  avatarUrl: '/src/assets/images/student_avatar_profile_1790642966980.jpg',
+  avatarUrl: defaultAvatar,
   country: 'El Salvador',
   activeSpace: 'general',
   activeGobYear: 3,

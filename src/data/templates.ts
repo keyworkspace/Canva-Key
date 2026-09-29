@@ -1,4 +1,8 @@
 import { SiteConfig, ServiceItem, MenuItem, ProductItem, ProjectItem } from '../types';
+import archImg from '../assets/images/hero_architecture_studio_1790642674150.jpg';
+import restImg from '../assets/images/hero_gourmet_restaurant_1790642684264.jpg';
+import bizImg from '../assets/images/hero_business_workspace_1790642694992.jpg';
+import coffeeImg from '../assets/images/product_boutique_coffee_1790642704462.jpg';
 
 export const DEFAULT_TEMPLATES: Record<string, SiteConfig> = {
   business: {
@@ -241,8 +245,8 @@ export const SHOP_PRODUCTS: ProductItem[] = [
 ];
 
 export const IMAGES = {
-  architecture: '/src/assets/images/hero_architecture_studio_1790642674150.jpg',
-  restaurant: '/src/assets/images/hero_gourmet_restaurant_1790642684264.jpg',
-  business: '/src/assets/images/hero_business_workspace_1790642694992.jpg',
-  coffee: '/src/assets/images/product_boutique_coffee_1790642704462.jpg',
+  architecture: archImg,
+  restaurant: restImg,
+  business: bizImg,
+  coffee: coffeeImg,
 };

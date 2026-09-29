@@ -1,6 +1,7 @@
 import React from 'react';
 import { StudentProfile } from '../../types/student';
 import { GraduationCap, Timer, Plus, UserCheck, Sparkles, HelpCircle } from 'lucide-react';
+import defaultAvatar from '../../assets/images/student_avatar_profile_1790642966980.jpg';
 
 export type StudentTab = 'dashboard' | 'subjects' | 'schedule' | 'professors' | 'tasks' | 'tools';
 
@@ -130,7 +131,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
             className="flex items-center gap-2 p-1 pl-2 sm:pr-3 rounded-lg border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-colors"
           >
             <img
-              src={profile.avatarUrl || '/src/assets/images/student_avatar_profile_1790642966980.jpg'}
+              src={profile.avatarUrl || defaultAvatar}
               alt={profile.name}
               referrerPolicy="no-referrer"
               className="w-6 h-6 rounded-full object-cover border border-slate-300"
