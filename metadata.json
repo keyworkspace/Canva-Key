@@ -1,0 +1,6 @@
+{
+  "name": "Canvas Key - Gestión Estudiantil Integral",
+  "description": "Plataforma integral para estudiantes: registro de notas ponderadas, horarios semanales, docentes, tareas, asistencias y herramientas académicas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
